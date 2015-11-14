@@ -1,0 +1,52 @@
+{
+	"name": "rm/thorin",
+	"type": "library",
+	"description": "Library for comfortable generate thumbnails.",
+	"keywords": ["nette", "image", "rm", "thorin", "thumbnail"],
+	"homepage": "https://github.com/romanmatyus/Thorin",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Roman Mátyus",
+			"homepage": "http://romiix.org",
+			"email": "romanmatyus@romiix.org"
+		}
+	],
+	"support": {
+		"email": "romanmatyus@romiix.org",
+		"issues": "https://github.com/kdyby/Thorin/issues"
+	},
+	"require": {
+		"nette/utils": ">=2.2"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "~0.8",
+		"latte/latte": "~2.3",
+		"nette/application": "~2.3",
+		"nette/bootstrap": "~2.3",
+		"nette/caching": "~2.3",
+		"nette/database": "~2.3",
+		"nette/di": "~2.3",
+		"nette/forms": "~2.3",
+		"nette/http": "~2.3",
+		"nette/mail": "~2.3",
+		"nette/robot-loader": "~2.2",
+		"nette/safe-stream": "~2.2",
+		"nette/security": "~2.3",
+		"nette/tester": "~1.3",
+		"tracy/tracy": "~2.3"
+	},
+	"suggest": {
+		"latte/latte": "For simple use with Latte",
+		"nette/application": "For simple use with Nette UI Presenter",
+		"nette/di": "For simple use with Nette DI"
+	},
+	"autoload": {
+		"psr-0": {
+			"RM\\Thorin": "src/"
+		},
+		"classmap": [
+			"src/RM/Thorin/exceptions.php"
+		]
+	}
+}

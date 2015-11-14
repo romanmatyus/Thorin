@@ -1,0 +1,9 @@
+services:
+	- RM\Thorin\Providers\PathProvider
+	- RM\Thorin\Providers\ReturnProvider
+	- RM\Thorin\Generators\WebTempGenerator(../temp)
+	- RM\Thorin\ModeGenerator(RM\Thorin\Modes\BaseMode())
+	- RM\Thorin\Modes\DefaultMode
+	- RM\Thorin\ModeStorages\DefaultStorage
+	- RM\Thorin\Routers\SimpleRouter(/webtemp)
+	thorin: RM\Thorin\Thorin

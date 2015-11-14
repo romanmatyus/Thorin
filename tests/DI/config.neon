@@ -1,0 +1,22 @@
+extensions:
+	thorin: RM\Thorin\DI\ThorinExtension
+
+services:
+	mode:
+		factory: RM\Thorin\Modes\DefaultMode
+		setup:
+			- setName('userMode')
+
+thorin:
+	defaultMode: userMode
+	modes:
+		-
+			name: resize
+			modifiers:
+				- resize: [100, 200]
+				- sharpen
+		article:
+			namespace: article/big
+			modifiers:
+				- resize: [100, 200]
+				- sharpen
