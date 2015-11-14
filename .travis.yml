@@ -29,7 +29,7 @@ before_script:
     - if [[ $TRAVIS_PHP_VERSION == '5.6' ]] && [[ $COMPOSER_EXTRA_ARGS == '' ]]; then FLAGS="-d zend_extension=xdebug.so --coverage coverage.xml --coverage-src src"; fi;
 
 script:
-    - vendor/bin/tester tests -s -c tests/php-unix.ini $FLAGS
+    - vendor/bin/tester tests -s -c tests/php-unix.ini -p php $FLAGS
 
 after_script:
     - |
