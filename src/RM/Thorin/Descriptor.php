@@ -189,6 +189,7 @@ class Descriptor extends Object
 			return $this->generator->getLink($this);
 		} catch (\Exception $e) {
 			trigger_error($e->getMessage(), E_USER_ERROR);
+			return '';
 		}
 	}
 
